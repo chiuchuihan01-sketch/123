@@ -1,0 +1,43 @@
+<svg width="560" height="160" viewBox="0 0 560 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="imMBA logo">
+  <defs>
+    <linearGradient id="g" x1="24" y1="24" x2="120" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#27C7FF"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(18,18)" filter="url(#soft)">
+    <rect x="0" y="0" width="124" height="124" rx="28" fill="url(#g)"/>
+    <g transform="translate(20,18)">
+      <!-- Mortarboard cap -->
+      <path d="M42 6L84 22L42 38L0 22L42 6Z" fill="rgba(8,16,38,0.92)"/>
+      <path d="M12 28V44C12 52 25 58 42 58C59 58 72 52 72 44V28" fill="none" stroke="rgba(8,16,38,0.92)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M84 22V52" stroke="rgba(8,16,38,0.92)" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="84" cy="56" r="4" fill="rgba(8,16,38,0.92)"/>
+
+      <!-- Globe -->
+      <g transform="translate(10,64)">
+        <circle cx="32" cy="24" r="24" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.70)" stroke-width="2.2"/>
+        <path d="M8 24H56" stroke="rgba(255,255,255,0.70)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M32 0C24 8 24 40 32 48" stroke="rgba(255,255,255,0.70)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M32 0C40 8 40 40 32 48" stroke="rgba(255,255,255,0.70)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M12 12C22 18 42 18 52 12" stroke="rgba(255,255,255,0.55)" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M12 36C22 30 42 30 52 36" stroke="rgba(255,255,255,0.55)" stroke-width="2.2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(166,42)">
+    <text x="0" y="46" font-family="Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="56" font-weight="800" letter-spacing="-0.02em" fill="rgba(255,255,255,0.94)">
+      <tspan fill="rgba(255,255,255,0.90)">im</tspan><tspan fill="url(#g)">MBA</tspan>
+    </text>
+    <text x="2" y="84" font-family="Noto Sans TC, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="rgba(255,255,255,0.72)">
+      �'x��ߡ��� (imMBA)
+    </text>
+  </g>
+</svg>
