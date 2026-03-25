@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=/" />
+    <script>
+      // SPA fallback for static hosts: keep path in hash.
+      (function () {
+        var path = location.pathname || "/";
+        var search = location.search || "";
+        var hash = location.hash || "";
+        var next = "/#"+ path.replace(/\/+$/, "") + search + hash;
+        location.replace(next);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

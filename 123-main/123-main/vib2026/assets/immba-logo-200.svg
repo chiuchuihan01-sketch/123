@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="imMBA logo">
+  <defs>
+    <linearGradient id="g" x1="24" y1="24" x2="176" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#27C7FF"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soft)">
+    <rect x="10" y="10" width="180" height="180" rx="40" fill="url(#g)"/>
+
+    <!-- Mortarboard -->
+    <g transform="translate(46,34)">
+      <path d="M54 8L108 30L54 52L0 30L54 8Z" fill="rgba(8,16,38,0.92)"/>
+      <path d="M16 40V58C16 68 33 76 54 76C75 76 92 68 92 58V40" fill="none" stroke="rgba(8,16,38,0.92)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M108 30V70" stroke="rgba(8,16,38,0.92)" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="108" cy="76" r="5" fill="rgba(8,16,38,0.92)"/>
+    </g>
+
+    <!-- Globe -->
+    <g transform="translate(56,102)">
+      <circle cx="44" cy="38" r="38" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.72)" stroke-width="2.6"/>
+      <path d="M10 38H78" stroke="rgba(255,255,255,0.72)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M44 0C31 13 31 63 44 76" stroke="rgba(255,255,255,0.72)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M44 0C57 13 57 63 44 76" stroke="rgba(255,255,255,0.72)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M16 20C29 28 59 28 72 20" stroke="rgba(255,255,255,0.55)" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M16 56C29 48 59 48 72 56" stroke="rgba(255,255,255,0.55)" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Wordmark -->
+    <g transform="translate(46,156)">
+      <text x="0" y="0" dominant-baseline="central" font-family="Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="-0.02em" fill="rgba(255,255,255,0.94)">
+        <tspan fill="rgba(255,255,255,0.90)">im</tspan><tspan fill="rgba(8,16,38,0.92)">MBA</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

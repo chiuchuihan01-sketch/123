@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>輔仁大學 imMBA｜國際經營管理碩士班</title>
+    <meta
+      name="description"
+      content="Fu Jen Catholic University imMBA – International Master of Business Administration. 輔仁大學國際經營管理碩士班。"
+    />
+    <meta name="theme-color" content="#3e4754" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="topbar">
+        <div class="container topbar__inner">
+          <div class="topbar__left">
+            <a class="topbar__brand" id="topbar-logo-link" href="/admin" data-link>
+              <div class="topbar__logo" aria-hidden="true">
+                <img class="brand__logo" src="/assets/immba-logo-200.svg" alt="" />
+              </div>
+            </a>
+            <a class="topbar__brand" id="topbar-home-link" href="/" data-link>
+              <div class="topbar__titles">
+                <div class="topbar__title" data-i18n="brand.title">
+                  輔仁大學國際經營管理碩士班(imMBA)
+                </div>
+                <div class="topbar__subtitle" data-i18n="brand.subtitle">Fu Jen Catholic University</div>
+              </div>
+            </a>
+          </div>
+          <div class="topbar__right">
+            <div class="topbar__langbar lang-switch" role="group" aria-label="Language switch">
+              <button class="pill" type="button" data-lang="zh">中文</button>
+              <button class="pill" type="button" data-lang="en">EN</button>
+            </div>
+            <div class="topbar__links" role="navigation" aria-label="Top links">
+              <a class="topbar__link" href="/news" data-link data-i18n="top.links.news">公告</a>
+              <a
+                class="topbar__link"
+                href="https://www.management.fju.edu.tw/"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="top.links.fju"
+                >管理學院連結</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-shell">
+        <div class="container nav-shell__inner">
+          <nav class="nav" id="nav" aria-label="Primary">
+            <ul class="nav__list" id="nav-list"></ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" role="main">
+      <div class="container">
+        <div id="app"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <div class="footer__title">imMBA · FJCU</div>
+          <div class="footer__desc" data-i18n="footer.desc">
+            International Master of Business Administration, College of Management, Fu Jen Catholic University.
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <div class="footer__heading" data-i18n="footer.contact">Contact</div>
+            <ul class="footer__list">
+              <li><span class="muted" data-i18n="footer.email">Email</span> <a href="mailto:immba@fju.edu.tw">immba@fju.edu.tw</a></li>
+              <li><span class="muted" data-i18n="footer.phone">Phone</span> <a href="tel:+886229053526">+886-2-2905-3526</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__heading" data-i18n="footer.links">Links</div>
+            <ul class="footer__list">
+              <li><a href="https://www.fju.edu.tw/" target="_blank" rel="noreferrer">FJCU</a></li>
+              <li><a href="https://www.management.fju.edu.tw/" target="_blank" rel="noreferrer" data-i18n="footer.link.com">College of Management</a></li>
+              <li><a href="https://www.management.fju.edu.tw/subweb/immba/" target="_blank" rel="noreferrer" data-i18n="footer.link.official">Official imMBA site</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__translate">
+        <p class="muted footer__translate-hint" data-i18n="footer.machineTranslate">
+          Other languages (automatic translation by Google)
+        </p>
+        <div id="google_translate_element" class="footer__translate-widget"></div>
+      </div>
+      <div class="container footer__bottom">
+        <small class="muted">© <span id="year"></span> <span data-i18n="footer.copyright">College of Management, Fu Jen Catholic University</span></small>
+      </div>
+    </footer>
+
+    <div class="modal" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-title" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="document">
+        <div class="modal__header">
+          <div class="modal__title" id="search-title" data-i18n="search.title">Search</div>
+          <button class="icon-btn" type="button" data-close aria-label="Close">✕</button>
+        </div>
+        <div class="modal__body">
+          <label class="field">
+            <span class="field__label" data-i18n="search.label">Keyword</span>
+            <input id="search-input" class="field__input" type="search" placeholder="imMBA" />
+          </label>
+          <div class="search-results" id="search-results" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
